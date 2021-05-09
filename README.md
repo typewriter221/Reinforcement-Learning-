@@ -7,4 +7,9 @@ My understanding of DRL - Pytorch
    3. Throw away all episodes with a reward below the boundary.
    4. Train on the remaining "elite" episodes using observations as the input and
       issued actions as the desired output.
-   5. Repeat from step i until we become satisfied with the result.   
+   5. Repeat from step i until we become satisfied with the result.  
+3. FrozenLake using CrossEntropy Model-Free, Policy-Based, On-Policy, Discounted Reward - 
+   1. Reward 1 on completion Reward 0 on failing.
+   2. Calulation discousted reward of each episode to penalize long episodes.
+   3. Keeping better performing episodes forto tackel splling randomnes of the enviornment.
+   4. Need more than 10K iterations to provide acceptable results. 
